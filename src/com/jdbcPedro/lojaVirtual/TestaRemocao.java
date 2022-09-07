@@ -8,12 +8,12 @@ public class TestaRemocao{
 
 	public static void main(String[] args) throws SQLException {
 
-		int id = 8;
+		int id = 2;
 		
 		ConnectionFactory cf = new ConnectionFactory();
 		Connection con = cf.recuperarConexao();
 		
-		PreparedStatement stm = con.prepareStatement("DELETE FROM PRODUTO WHERE ID = ?");
+		PreparedStatement stm = con.prepareStatement("DELETE FROM PRODUTO WHERE ID > ?");
 		stm.setInt(1, id);
 		stm.execute();
 		

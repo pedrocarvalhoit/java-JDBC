@@ -10,8 +10,8 @@ public class TestaConexao {
 		ConnectionFactory criaConexao = new ConnectionFactory();
 		Connection con = criaConexao.recuperarConexao();
 		
-		
 		System.out.println("Encerrando conexão");
+		
 		con.close();
 	}
 

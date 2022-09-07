@@ -8,10 +8,10 @@ public class TestaRemocao {
 
 	public static void main(String[] args) throws SQLException {
 		
-		int cpf = 44445;
+		int cpf = 42424;
 		
 		ConnectionFactory factory = new ConnectionFactory();
-		Connection con = factory.criarConexao();
+		Connection con = factory.recuperarConexao();
 		
 		PreparedStatement stm = con.prepareStatement("DELETE FROM TBCLIENT WHERE CPF = ?");
 		stm.setInt(1, cpf);

@@ -10,7 +10,7 @@ public class TestaListagem {
 	public static void main(String[] args) throws SQLException {
 		
 		ConnectionFactory factory = new ConnectionFactory();
-		Connection con = factory.criarConexao();
+		Connection con = factory.recuperarConexao();
 		
 		PreparedStatement stm = con.prepareStatement("SELECT * FROM TBCLIENT");
 		stm.execute();
