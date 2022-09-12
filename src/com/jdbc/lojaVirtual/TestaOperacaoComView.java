@@ -1,0 +1,10 @@
+package com.jdbc.lojaVirtual;
+
+public class TestaOperacaoComView {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

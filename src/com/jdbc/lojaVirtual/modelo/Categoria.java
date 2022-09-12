@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Categoria {
 	
-	private int id;
+	private Integer id;
 	private String nome;
 	private List<Produto> produtos = new ArrayList<>();
 	
@@ -28,5 +28,10 @@ public class Categoria {
 
 	public List<Produto> getProdutos() {
 		return produtos;
+	}
+	
+	@Override
+	public String toString() {
+		return this.nome;
 	}
 }

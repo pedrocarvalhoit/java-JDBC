@@ -17,7 +17,7 @@ public class ConnectionFactory {
 		ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
 		comboPooledDataSource.setJdbcUrl("jdbc:mysql://localhost/strengthtraining?useTimezone=true&serverTimezone=UTC");
 		comboPooledDataSource.setUser("root");
-		comboPooledDataSource.setPassword("11111");
+		comboPooledDataSource.setPassword("root");
 		
 		comboPooledDataSource.setMaxPoolSize(15);
 		
@@ -26,7 +26,11 @@ public class ConnectionFactory {
 	}
 	
 	public Connection recuperarConexao() throws SQLException {
-		return this.dataSource.getConnection();
-	}
-
+		try {
+			return this.dataSource.getConnection();
+		} catch (SQLException e) {
+			throw new RuntimeException(e);		
+		}
+		
+	}	
 }

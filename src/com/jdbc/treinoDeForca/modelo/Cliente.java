@@ -2,12 +2,12 @@ package com.jdbc.treinoDeForca.modelo;
 
 public class Cliente {
 	
-	private int cpf = 11116;
-	private String nome = "Rafael Nadal";
-	private String cidade = "Barcelona";
-	private int idade = 35;
-	private String genero = "M";
-	private String nivelAtividade = "advanced ";
+	private int cpf;
+	private String nome;
+	private String cidade;
+	private int idade;
+	private String genero;
+	private String nivelAtividade;
 	
 	public Cliente(int cpf, String nome, String cidade, int idade, String genero, String nivelAtividade) {
 		this.cpf = cpf;
