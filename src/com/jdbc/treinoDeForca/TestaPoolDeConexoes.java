@@ -2,6 +2,8 @@ package com.jdbc.treinoDeForca;
 
 import java.sql.SQLException;
 
+import com.jdbc.treinoDeForca.factory.ConnectionFactory;
+
 public class TestaPoolDeConexoes {
 
 	public static void main(String[] args) throws SQLException {

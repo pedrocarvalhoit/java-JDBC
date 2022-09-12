@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import com.jdbc.treinoDeForca.factory.ConnectionFactory;
+
 public class TesteAlteracao {
 
 	public static void main(String[] args) throws SQLException {

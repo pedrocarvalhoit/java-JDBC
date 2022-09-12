@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import com.jdbc.treinoDeForca.dao.ClienteDAO;
+import com.jdbc.treinoDeForca.factory.ConnectionFactory;
 import com.jdbc.treinoDeForca.modelo.Cliente;
 
 public class TestaInsercaoComListagem {
